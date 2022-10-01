@@ -348,7 +348,28 @@ BigInt Factorial(int n){
         f *= i;
     return f;
 }
-
+// Square root
+BigInt sqrt(BigInt & a){
+    BigInt left(1), right(a), v(1), mid, prod;
+    divide_by_2(right);
+    while(left <= right){
+        mid += left;
+        mid += right;
+        divide_by_2(mid);
+        prod = (mid * mid);
+        if(prod <= a){
+            v = mid;
+            ++mid;
+            left = mid;
+        }
+        else{
+            --mid;
+            right = mid;
+        }
+        mid = BigInt();
+    }
+    return v;
+}
 
 // Read and Write opreator (<<, >>)
 
