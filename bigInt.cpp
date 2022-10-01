@@ -376,5 +376,9 @@ int main()
 	// To define name use: BigInt varName("522545444");
 	// To get length use: Length(varName);
 	// other opreations are as usual
+	BigInt num1("3342");
+	BigInt num2("234");
+	BigInt num3;
+	num3 = num1+num2;
 	return 0;
 }
