@@ -13,6 +13,10 @@
 - **Step 5** - Create a PULL Request. And that's all.
 - **NOTE** - Please start the filename with the name mentioned in issue.
 
+### Special notes (not mandatory but helps reviewer)
+- Please name your issues/PR in a small syntax like `Add: file.xyz`, `Fix: Bug #<issue_number>`, etc
+- If PR is closing any issue then kindly mention that issue number (syntax: #<issue_number) to auto close the issue
+
 ### What you can contribute in this repo? :punch:
 
 - You can add your own built functions to provide java like functionality in cpp.
