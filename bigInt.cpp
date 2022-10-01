@@ -341,6 +341,14 @@ BigInt operator%(const BigInt &a,BigInt &b){
 	return temp;
 }
 
+// factorial
+BigInt Factorial(int n){
+    BigInt f(1);
+    for (int i = 2; i <= n;i++)
+        f *= i;
+    return f;
+}
+
 // Read and Write opreator (<<, >>)
 
 istream &operator>>(istream &in,BigInt&a){
